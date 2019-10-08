@@ -4,9 +4,9 @@ sudo systemctl stop kubelet docker
 cd /etc/
 
 # backup old kubernetes data
-
+sudo rm -rf kubernetes-backup
 sudo mv kubernetes kubernetes-backup
-
+sudo rm -rf /var/lib/kubelet-backup
 sudo mv /var/lib/kubelet /var/lib/kubelet-backup
 
 
